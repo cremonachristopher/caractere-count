@@ -1,6 +1,6 @@
 <?php
 
-function numero(string $a): array {
+function numero(string $argv, string $a): array {
     
     if ($a === '') {
     echo "Aucun argument reçu";
@@ -14,3 +14,6 @@ function numero(string $a): array {
         }
         return $resultat; 
     }
+    $a = ["banane" => 1, "apple" => 2, "cherry" => 3];
+    numero("coucou");
+    ?>
